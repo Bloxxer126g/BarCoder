@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarCoder</title>
+</head>
+<body>
+    <span><h1>BarCoder </h1>from bloxxer.dev</span>
+    | <i>uses the quickchart barcode api</i>
+    | 100% free
+    <hr>
+    <p>configuration</p>
+    <input type="text" placeholder="prefix" id="prefix">
+    <br>
+    <input type="text" placeholder="starting range" id="start">
+    <br>
+    <input type="text" placeholder="amount to generate" id="amount">
+    <br>
+    <button id="go">start</button>
+    <p id="next">next batch start range: 0</p>
+    <hr>
+    <p>output</p>
+    <img src="https://quickchart.io/barcode?type=code128&includeText=true&text=BarCoder">
+</body>
+</html>
