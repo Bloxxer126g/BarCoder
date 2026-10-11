@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BarCoder</title>
+    <script defer src="/barcoder.js"></script>
 </head>
 <body>
-    <span><h1>BarCoder </h1>from bloxxer.dev</span>
-    | <i>uses the quickchart barcode api</i>
-    | 100% free
-    <hr>
-    <p>configuration</p>
-    <input type="text" placeholder="prefix" id="prefix">
-    <br>
-    <input type="text" placeholder="starting range" id="start">
-    <br>
-    <input type="text" placeholder="amount to generate" id="amount">
-    <br>
-    <button id="go">start</button>
-    <p id="next">next batch start range: 0</p>
-    <hr>
-    <p>output</p>
-    <img src="https://quickchart.io/barcode?type=code128&includeText=true&text=BarCoder">
+    <div id="canhide">
+        <span><h1>BarCoder </h1>from bloxxer.dev</span>
+        | <i>uses the quickchart barcode api</i>
+        | 100% free
+        <hr>
+        <p>configuration</p>
+        <input type="text" placeholder="prefix" id="prefix">
+        <br>
+        <input type="text" placeholder="starting range" id="start">
+        <br>
+        <input type="text" placeholder="amount to generate" id="amount">
+        <br>
+        <button id="go">start</button>
+        <p>next batch start range: <span id="next">0</span></p>
+        ^  write this down and put it into the starting range box next time
+        <hr>
+        <p>output</p>
+        <p id="error">no error</p>
+        <button id="print">print</button>
+    </div>
+    <div id="output">
+        <img src="https://quickchart.io/barcode?type=code128&includeText=true&text=BarCoder">
+    </div>
 </body>
 </html>
